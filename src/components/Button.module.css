@@ -1,0 +1,22 @@
+.btn {
+    border: none;
+    border-radius: 2em;
+
+    background-color: var(--primary-bg-color);
+    color: var(--light-grey);
+
+    width: 150px;
+    padding: .7em 2em;
+    font-size: 1rem;
+
+    transition: opacity 300ms;
+}
+.btn:hover {
+    cursor: pointer;
+    opacity: .6;
+}
+@media (min-width: 768px) {
+    .btn {
+        display: block;
+    }    
+}

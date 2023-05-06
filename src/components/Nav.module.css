@@ -1,0 +1,45 @@
+.nav {
+    padding: 1rem 0;
+}
+
+.nav__links {
+    position: fixed;
+    left: 10%;
+    right: 10%;
+    top: 15%;
+    z-index: 200;
+
+    background-color: #fff;
+    padding: 1rem;
+    display: none;
+    text-align: center;
+}
+
+.active {
+    display: block;
+}
+.nav button {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    .nav__links {
+        position: static;
+        background-color: transparent;
+
+        display: flex;
+        gap: 1rem;
+    }
+    .nav__hamburger {
+        display: none;
+    }    
+    .nav button {
+        display: block;        
+    }
+}
+
+.nav .row {
+    justify-content: space-between;
+    align-items: center;
+}

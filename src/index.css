@@ -1,0 +1,65 @@
+:root {
+  --primary-bg-color: hsl(12, 88%, 59%); 
+  --primary-color: hsl(228, 39%, 23%); 
+  --secondary-bg-color: hsl(227, 39%, 13%); 
+  --footer-color: hsl(233, 12%, 13%);
+  --bg-pattern: hsl(13, 100%, 96%);
+  --light-grey: hsl(0, 0%, 98%);
+
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Be vietnam Pro, serif;
+  line-height: 1.5;
+  background-color: var(--light-grey)
+}
+
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.row--mobile {
+  display: flex;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+header {
+  background-image: url('./assets/images/bg-tablet-pattern.svg');
+  background-position: calc(100% + 200px) -200%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  header {
+    background-image: url('./assets/images/bg-tablet-pattern.svg');
+    background-position: calc(100% + 200px) -200%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .row--desktop {
+    display: flex;
+  }
+  .container {
+    width: 90%;
+  }
+  header {
+    background-size: 50%;
+  }
+  
+}
+

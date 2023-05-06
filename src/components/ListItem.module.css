@@ -1,0 +1,10 @@
+.nav__item {
+    margin: .5rem 0;
+}
+.nav__item a {
+    font-weight: 500;
+    transition: opacity 200ms;
+}
+.nav__item a:hover {
+    opacity: .6;
+}

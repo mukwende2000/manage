@@ -1,0 +1,25 @@
+.about {
+    margin-top: 5rem;
+    text-align: center;  
+}
+.about__header {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+.about__desc {
+    color: var(--primary-color);
+}
+.ul {
+    margin: 0;
+}
+@media (min-width: 768px) {
+    .about__desc,
+    .about__header {
+        text-align: left;
+    }
+    .about__container {
+        align-items: flex-start;
+        gap: 5rem;
+    }
+}
